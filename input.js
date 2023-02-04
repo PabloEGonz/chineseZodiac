@@ -20,4 +20,37 @@ document.getElementById("submitbutton").onclick = function(){
     if(rat.includes(zodiac) ===  true){
         document.getElementById("display").innerHTML = "testing";
     }
+    if(ox.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing1";
+    }
+    if(tiger.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing2";
+    }
+    if(rabbit.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing3";
+    }
+    if(dragon.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing4";
+    }
+    if(snake.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing5";
+    }
+    if(horse.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing6";
+    }
+    if(goat.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing7";
+    }
+    if(monkey.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing8";
+    }
+    if(rooster.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing9";
+    }
+    if(dog.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing10";
+    }
+    if(pig.includes(zodiac) ===  true){
+        document.getElementById("display").innerHTML = "testing11";
+    }
 }
