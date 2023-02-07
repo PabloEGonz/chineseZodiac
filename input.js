@@ -13,10 +13,9 @@ let pig = [1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019, 2031];
 
 
 
-
-const modal_container = document.getElementById("modal_container");
+const open = document.getElementById("submitbutton");
 const close = document.getElementById("close");
-
+let modal_container = document.getElementById("modal_container");
 
 close.addEventListener("click", () => {
     modal_container.classList.remove("show");
@@ -29,39 +28,98 @@ document.getElementById("submitbutton").onclick = function(){
    
     
     if(rat.includes(zodiac) ===  true){
+        document.getElementById("year").innerHTML = "You were born in the year of the Rat";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
             modal_container.classList.add("show");
+
+        })
     }
     if(ox.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing1";
+        document.getElementById("year").innerHTML = "You were born in the year of the Ox";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+        })
     }
     if(tiger.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing2";
+        document.getElementById("year").innerHTML = "You were born in the year of the Tiger";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(rabbit.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing3";
+        document.getElementById("year").innerHTML = "You were born in the year of the Rabbit";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(dragon.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing4";
+        document.getElementById("year").innerHTML = "You were born in the year of the Dragon";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(snake.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing5";
+        document.getElementById("year").innerHTML = "You were born in the year of the Snake";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(horse.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing6";
+        document.getElementById("year").innerHTML = "You were born in the year of the Horse";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(goat.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing7";
+        document.getElementById("year").innerHTML = "You were born in the year of the Goat";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(monkey.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing8";
+        document.getElementById("year").innerHTML = "You were born in the year of the Monkey";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(rooster.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing9";
+        document.getElementById("year").innerHTML = "You were born in the year of the Rooster";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(dog.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing10";
+        document.getElementById("year").innerHTML = "You were born in the year of the Dog";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
     if(pig.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing11";
+        document.getElementById("year").innerHTML = "You were born in the year of the Pig";
+        document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        open.addEventListener("click", () => {
+            modal_container.classList.add("show");
+
+        })
     }
 }
