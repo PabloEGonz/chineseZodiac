@@ -12,13 +12,24 @@ let dog = [1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018, 2030];
 let pig = [1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019, 2031];
 
 
+
+
+const modal_container = document.getElementById("modal_container");
+const close = document.getElementById("close");
+
+
+close.addEventListener("click", () => {
+    modal_container.classList.remove("show");
+})
+
+
 document.getElementById("submitbutton").onclick = function(){
 
     var zodiac = parseInt(document.getElementById("inputyear").value);
    
     
     if(rat.includes(zodiac) ===  true){
-        document.getElementById("display").innerHTML = "testing";
+            modal_container.classList.add("show");
     }
     if(ox.includes(zodiac) ===  true){
         document.getElementById("display").innerHTML = "testing1";
