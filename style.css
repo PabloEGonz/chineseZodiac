@@ -29,10 +29,13 @@ button{
     padding: 5px 10px;
     
 }
+a{
+   
+}
 .modal-container{
     display:inline-block;
     pointer-events: none;
-    opacity: 0;
+    opacity: 1;
     border-radius: 18px;
     position: fixed;
     top: 100px;

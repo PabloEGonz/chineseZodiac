@@ -30,6 +30,7 @@ document.getElementById("submitbutton").onclick = function(){
     if(rat.includes(zodiac) ===  true){
         document.getElementById("year").innerHTML = "You were born in the year of the Rat";
         document.getElementById("display").innerHTML = "The Rat is the first of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Rat tricked the Ox into giving him a ride. Then, just as they arrived at the finish line, Rat jumped down and landed ahead of Ox, becoming first.";
+        document.getElementById("ratlink").innerHTML = "click here to know more"
         open.addEventListener("click", () => {
             modal_container.classList.add("show");
 
