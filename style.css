@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(221, 72, 72);
+    background-color: #FE0200
    
 }
 #headerp{
@@ -20,28 +20,26 @@ label{
     
 }
 button{
-    background-color: goldenrod;
+    background-color: #b39800;    ;
     border: 0;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgb(176, 41, 4);
-    color: rgb(247, 4, 4);
-    font-size: 14px;
+    box-shadow: 0 5px 6px #616103;
+    color: black;
+    font-size: 16px;
     padding: 5px 10px;
     
 }
 .modal-container{
     display:inline-block;
     pointer-events: none;
-    opacity: 1;
+    opacity: 0;
     border-radius: 18px;
-    
-   
     position: fixed;
     top: 100px;
     left: 250px;
     height: 60vh;
     width: 60vw; 
-    background-color: blue;
+    background-color: #FE7D00;
     text-align: center;
 }
 .show{
@@ -59,6 +57,6 @@ button{
 }
 .modal p{
     opacity: 0.7;
-font-size: 14px;
-padding-top: 30px;
+    font-size: 14px;
+    padding-top: 30px;
 }
