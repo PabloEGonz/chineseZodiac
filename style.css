@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #FE0200
-   
+    background-color: #FE0200;
 }
 #headerp{
     text-align: center;
@@ -30,20 +29,25 @@ button{
     
 }
 a{
-   
+   display:inline-table;
+   font-style: oblique;
+   text-transform: capitalize;
 }
+
+
 .modal-container{
     display:inline-block;
     pointer-events: none;
-    opacity: 1;
+    opacity: 0;
     border-radius: 18px;
     position: fixed;
     top: 100px;
-    left: 250px;
+    left: 20%;
     height: 60vh;
-    width: 60vw; 
+    width: 60vw;
     background-color: #FE7D00;
     text-align: center;
+    border: 15px goldenrod;
 }
 .show{
     pointer-events: auto;
