@@ -8,7 +8,6 @@ body{
     text-align: center;
 }
 #searchb{
-    /*the display is causing the issue*/
     display:inline-block;
     margin: 0;
     padding: 210px;
@@ -30,8 +29,6 @@ a{
    font-style: oblique;
    text-transform: capitalize;
 }
-
-
 .modal-container{
     display:inline-block;
     pointer-events: none;

@@ -1,0 +1,43 @@
+body{
+    background-color: #f84949;
+    text-align: center;
+}
+p{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.pic{
+    width: 200px;
+    height: 250px;
+    position: relative;
+    background-color: #dedbaa;
+    box-shadow: 0 0 5px 2px #dd1717;
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.pic::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-280deg);
+    width: 160%;
+    height: 130%;
+    background-image: conic-gradient(gold 0deg, gold 90deg, transparent 130deg, transparent 180deg, gold 180deg, gold 270deg, transparent 310deg, transparent 360deg);
+    transition: transform 2s;
+}
+.pic:hover:before{
+    transform: translate(-50%, -50%) rotate(-100deg);
+}
+.pic::after{
+    transform: translate(-50%, -50%);
+}
+img{
+    position: absolute;
+    left: 3px;
+    width: 95%;
+    height: 95%;
+    border: 3px solid;
+}
