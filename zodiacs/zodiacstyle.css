@@ -1,21 +1,22 @@
 body{
     background-color: #f84949;
     text-align: center;
+    font-size:larger;
 }
 p{
     padding-left: 20%;
     padding-right: 20%;
+
 }
 .pic{
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
     position: relative;
-    background-color: #dedbaa;
-    box-shadow: 0 0 5px 2px #dd1717;
+    background-color: #e8e7d4;
+    box-shadow: 0 0 5px 2px hsl(67, 81%, 48%);
     cursor: pointer;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
+    left: 45%;
 }
 .pic::before{
     content: "";
@@ -36,8 +37,9 @@ p{
 }
 img{
     position: absolute;
-    left: 3px;
+    left: 6px;
+    top: 6px;
     width: 95%;
     height: 95%;
-    border: 3px solid;
+    border: 3px solid golds;
 }
