@@ -8,9 +8,8 @@ h1{
     text-shadow: 2px 2px gold;
 }
 p{
-    padding-left: 5%;
-    padding-right: 5%;
-
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .pic{
     width: 250px;
@@ -18,9 +17,9 @@ p{
     box-shadow: 0 0 5px 2px hsl(67, 81%, 48%);
     cursor: pointer;
     overflow: hidden;
+    left: 43%;
     border: 2px solid gold;
     animation: border-animation 1.5s infinite;
-    margin: 2% 13% 2% 13%;
 }
 @keyframes border-animation {
     0%{
@@ -40,4 +39,14 @@ p{
 img{
     width: 100%;
     height: 100%;
+}
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 480px){
+    p{
+        padding-right:5%;
+        padding-left: 5%;
+    }
+    .pic{
+        margin: 5% 20% 5% 18%;
+    }
 }
