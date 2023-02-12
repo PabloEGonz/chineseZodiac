@@ -8,22 +8,19 @@ h1{
     text-shadow: 2px 2px gold;
 }
 p{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 .pic{
     width: 250px;
     height: 300px;
-    position: relative;
-    
     box-shadow: 0 0 5px 2px hsl(67, 81%, 48%);
     cursor: pointer;
     overflow: hidden;
-    left: 43%;
     border: 2px solid gold;
     animation: border-animation 1.5s infinite;
-    
+    margin: 2% 13% 2% 13%;
 }
 @keyframes border-animation {
     0%{
