@@ -74,6 +74,7 @@ and (max-device-width : 480px){
     }
     #headerp{
         font-size: 14px;
+        padding: 5%;
     }
     #year{
         font-size: 19px
@@ -91,7 +92,6 @@ and (max-device-width : 480px){
         padding: 10px;
     }
     input{
-        border-radius: 3px;
         width: 100px;
         height: 30px;
         border-radius: 10px;
