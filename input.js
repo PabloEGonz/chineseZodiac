@@ -19,9 +19,8 @@ let modal_container = document.getElementById("modal_container");
 
 close.addEventListener("click", () => {
     modal_container.classList.remove("show");
+    location.reload();
 })
-
-
 document.getElementById("submitbutton").onclick = function(){
 
     var zodiac = parseInt(document.getElementById("inputyear").value);

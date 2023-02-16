@@ -1,15 +1,19 @@
 body{
     background-color: #f84949;
     text-align: center;
-    font-size:larger;
     font-family: 'Acme', sans-serif;
 }
 h1{
+    font-size: xxx-large;
     text-shadow: 2px 2px gold;
+}
+h3{
+    font-size: xx-large;
 }
 p{
     padding-left: 20%;
     padding-right: 20%;
+    font-size: x-large;
 }
 .pic{
     width: 250px;
@@ -17,7 +21,7 @@ p{
     box-shadow: 0 0 5px 2px hsl(67, 81%, 48%);
     cursor: pointer;
     overflow: hidden;
-    left: 43%;
+    margin: auto;
     border: 2px solid gold;
     animation: border-animation 1.5s infinite;
 }
@@ -42,11 +46,19 @@ img{
 }
 @media only screen and (min-device-width : 320px) 
 and (max-device-width : 480px){
+    h1{
+        font-size: xx-large;
+        text-shadow: 2px 2px gold;
+    }
+    h3{
+        font-size: x-large;
+    }
     p{
         padding-right:5%;
         padding-left: 5%;
+        font-size: large;
     }
     .pic{
-        margin: 5% 20% 5% 18%;
+        margin: auto;
     }
 }
