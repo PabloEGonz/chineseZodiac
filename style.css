@@ -51,7 +51,7 @@ a{
     position: fixed;
     top: 200px;
     left: 20%;
-    height: 47%;
+    height: 50%;
     width: 60vw;
     background-color: #FE7D00;
     text-align: center;
@@ -92,7 +92,8 @@ and (max-device-width : 480px){
         display: inline-block;
         top: 200px;
         left: 15%;
-        height: 55%;
+        min-height: 50%;
+        height: 60%;
         width: 70vw;
         text-align: center;
         padding: 10px;
