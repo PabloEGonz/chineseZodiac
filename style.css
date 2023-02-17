@@ -86,7 +86,7 @@ and (max-device-width : 480px){
         font-size: 19px
     }
     #display{
-        font-size: 14px;
+        font-size: 12px;
     }
     .modal-container{
         display: inline-block;
