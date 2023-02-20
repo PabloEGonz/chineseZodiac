@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #FE0200;
+    background-color: #f42e2e;
     font-size: larger;
     text-align: center;
     font-family: 'Acme', sans-serif;
@@ -19,6 +19,10 @@ body{
     padding-left: 20%;
     padding-right: 20%;
     text-align: center;
+}
+input{
+    border-radius: 3px;
+    border: 2px solid gold;
 }
 button{
     background-color: #b39800;    ;
