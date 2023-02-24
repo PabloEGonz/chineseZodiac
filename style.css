@@ -23,6 +23,8 @@ body{
 input{
     border-radius: 3px;
     border: 2px solid gold;
+    width: 100px;
+    height: 25px;
 }
 button{
     background-color: #b39800;    ;
@@ -32,12 +34,13 @@ button{
     color: black;
     font-size: 16px;
     padding: 5px 10px;
+    margin: 5px;
     
 }
 a{
-   display:inline-table;
    font-style: oblique;
    text-transform: capitalize;
+    text-decoration: none;
 }
 .modal-container{
     display:inline-block;
@@ -63,4 +66,35 @@ a{
     padding-top: 10px;
     padding-left: 5%;
     padding-right: 5%;
+}
+@media only screen and (min-device-width : 320px) 
+and (max-device-width : 480px){
+    body{
+        font-size: 16px;
+    }
+    #headerp{
+        font-size: 14px;
+    }
+    #year{
+        font-size: 19px
+    }
+    #display{
+        font-size: 14px;
+    }
+    .modal-container{
+        display: inline-block;
+        top: 200px;
+        left: 15%;
+        height: 55%;
+        width: 70vw;
+        text-align: center;
+        padding: 10px;
+    }
+    input{
+        border-radius: 3px;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
 }
