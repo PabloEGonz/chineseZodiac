@@ -40,10 +40,7 @@ let knowYourZodiac = function(){
     if(ox.includes(zodiac) ===  true){
         document.getElementById("year").innerHTML = "You were born in the year of the Ox!";
         document.getElementById("display").innerHTML = "The Ox is the second of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. The Ox was about to be the first to arrive, but Rat tricked Ox into giving him a ride. Then, just as they arrived, Rat jumped down and landed ahead of Ox. Thus, Ox became the second animal.";
-        document.getElementById("links").innerHTML = '<a id="oxlink" href="zodiacs/ox.html"></a>';
-        open.addEventListener("click", () => {
-            modal_container.classList.add("show");
-        })
+        document.getElementById("links").innerHTML = '<a id="oxlink" href="zodiacs/ox.html">click here to know more</a>';
     }
     if(tiger.includes(zodiac) ===  true){
         document.getElementById("year").innerHTML = "You were born in the year of the Tiger!";
