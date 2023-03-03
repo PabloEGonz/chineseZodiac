@@ -21,6 +21,7 @@ close.addEventListener("click", () => {
     modal_container.classList.remove("show");
     location.reload();  
 })
+//makes the modal pop up show up
 let testing = function(){
     modal_container.classList.add("show");
 }
@@ -30,7 +31,7 @@ let knowYourZodiac = function(){
 
     if(zodiac < 1924 || zodiac > 2031){
         document.getElementById("year").innerHTML = "Invalid Input!";
-        document.getElementById("display").innerHTML = "Please make sure you're entering a valid year, This webpage doesn't accept a year previous to 1924 and no more than 2031 ";
+        document.getElementById("display").innerHTML = "Please make sure you're entering a valid year, This webpage doesn't accept a year previous to 1924 and no more than 2031.";
     } 
     if(rat.includes(zodiac) ===  true){
         document.getElementById("year").innerHTML = "You were born in the year of the Rat!";
