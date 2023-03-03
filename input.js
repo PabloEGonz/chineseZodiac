@@ -13,7 +13,7 @@ let pig = [1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019, 2031];
 
 
 
-const open = document.getElementById("submitbutton");
+// const open = document.getElementById("submitbutton");
 const close = document.getElementById("close");
 let modal_container = document.getElementById("modal_container");
 
