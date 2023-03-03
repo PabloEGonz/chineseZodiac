@@ -37,7 +37,7 @@ button{
     margin: 5px;
     
 }
-a{
+#links a{
    font-style: oblique;
    text-transform: capitalize;
     text-decoration: none;
