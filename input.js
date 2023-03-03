@@ -21,7 +21,7 @@ close.addEventListener("click", () => {
     modal_container.classList.remove("show");
 })
 //makes the modal pop up show up
-let testing = function(){
+let popUp = function(){
     modal_container.classList.add("show");
 }
 let knowYourZodiac = function(){
