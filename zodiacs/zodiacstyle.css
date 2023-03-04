@@ -25,6 +25,11 @@ p{
     border: 2px solid gold;
     animation: border-animation 1.5s infinite;
 }
+a{
+    text-decoration: none;
+    color: #b39800;
+    text-shadow: 1px 1px 3px white;
+}
 @keyframes border-animation {
     0%{
         border-color: gold;
