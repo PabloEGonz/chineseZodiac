@@ -16,17 +16,27 @@ let pig = [1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019, 2031];
 const open = document.getElementById("submitbutton");
 const close = document.getElementById("close");
 let modal_container = document.getElementById("modal_container");
+let input = document.getElementById("inputyear");
 
 close.addEventListener("click", () => {
     modal_container.classList.remove("show");
 })
+
+//event listener to click the submitbutton on enterf
+
+input.addEventListener("keyup", (event)=>{
+    if(event.keyCode === 13){
+        document.getElementById("submitbutton").click();
+    }
+});
+
 //makes the modal pop up show up
 let popUp = function(){
     modal_container.classList.add("show");
 }
 let knowYourZodiac = function(){
 // Takes the input year and stores it in the variable 
-    const zodiac = parseInt(document.getElementById("inputyear").value);
+    const zodiac = parseInt(input.value);
 
     if(zodiac < 1924 || zodiac > 2031){
         document.getElementById("year").innerHTML = "Invalid Input!";
