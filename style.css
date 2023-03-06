@@ -31,6 +31,11 @@ input{
     width: 100px;
     height: 25px;
 }
+#inputyear:focus{
+
+    outline: 0;
+    box-shadow: 1px 1px 4px 2px #f2df71;
+}
 button{
     background-color: #b39800;    ;
     border: 0;
