@@ -7,10 +7,15 @@ body{
     text-align: center;
     font-family: 'Acme', sans-serif;
 }
+h1{
+    
+    text-shadow: 2px 2px 3px #eed238;
+}
 #headerp{
     font-size: 20px;
     padding-left: 20%;
     padding-right: 20%;
+    color: #242222;
 }
 #searchb{
     display:inline-block;
