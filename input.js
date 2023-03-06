@@ -22,7 +22,7 @@ close.addEventListener("click", () => {
     modal_container.classList.remove("show");
 })
 
-//event listener to click the submitbutton on enterf
+//event listener to click the submitbutton on enter
 
 input.addEventListener("keyup", (event)=>{
     if(event.keyCode === 13){
