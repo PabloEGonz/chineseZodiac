@@ -25,7 +25,7 @@ close.addEventListener("click", () => {
 //event listener to click the submitbutton on enter
 
 input.addEventListener("keyup", (event)=>{
-    if(event.keyCode === 13){
+    if(event.key === "Enter"){
         document.getElementById("submitbutton").click();
     }
 });
