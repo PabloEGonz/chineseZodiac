@@ -53,6 +53,9 @@ button{
     text-decoration: none;
     margin-top: 3%;
 }
+#links a :hover{
+    color: #FE7D00;
+}
 .modal-container{
     display: block;
     pointer-events: none;
