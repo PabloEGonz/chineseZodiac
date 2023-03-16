@@ -84,7 +84,7 @@ button{
 #close{
     position: relative;
     margin: auto;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 @media only screen and (min-device-width : 320px) 
 and (max-device-width : 480px){
