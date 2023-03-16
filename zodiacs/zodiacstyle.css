@@ -23,12 +23,12 @@ p{
     overflow: hidden;
     margin: auto;
     border: 2px solid gold;
-    animation: border-animation 1.5s infinite;
+    animation: border-animation 1s infinite;
 }
 a{
     text-decoration: none;
     color: #b39800;
-    text-shadow: 1px 1px 3px white;
+    text-shadow: 1px 1px 3px rgb(15, 6, 6);
 }
 @keyframes border-animation {
     0%{
