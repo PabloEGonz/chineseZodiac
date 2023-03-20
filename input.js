@@ -99,9 +99,9 @@ let knowYourZodiac = function(){
         document.getElementById("display").innerHTML = "The Pig is the twelfth of all zodiac animals. According to one myth, the Jade Emperor said the order would be decided by the order in which they arrived to his party. Pig was late because he overslept. Another story says that a wolf destroyed his house. He had to rebuild his home before he could set off. When he arrived, he was the last one and could only take twelfth place.";
         document.getElementById("links").innerHTML = '<a id="piglink" href="zodiacs/pig.html">click here to know more</a>'
     }
-    else(zodiac < 1924 || zodiac > 2031){
+    else{
         document.getElementById("year").innerHTML = "Invalid Input!";
         document.getElementById("display").innerHTML = "Please make sure you're entering a valid year, This webpage doesn't accept a year previous to 1924 and no more than 2031.";
-    } 
+    }
  
 }
