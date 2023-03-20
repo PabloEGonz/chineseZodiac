@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="photos/shortcut.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <title>Chinese Zodiac </title>
-</head>
-<body>
-<div>
-    <h1>Chinese Zodiac Animal Signs</h1>
-<div  id="headerp">
-    <p>This is a webpage that tells you what Chinese Zodiacs sign you are, you have to enter your date of birth and it will show your zodiac animal.</p>
-    <p>The Chinese zodiac, or Sheng Xiao (生肖), is a repeating 12-year cycle of animal signs and their ascribed attributes, based on the lunar calendar. In order, the zodiac animals are: Rat, Ox, Tiger, Rabbit, Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, Pig.</p>
-    <p>Your birth year determines your Chinese zodiac sign, but it can get tricky, as the lunar calendar varies from the solar, or Gregorian, calendar.</p>
-    <p>Because the dates of Chinese New Year change every year, individuals born in January or February will need to pay special attention to their birth date in addition to their birth year.</p>
-</div>
-</div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="photos/shortcut.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chinese Zodiac</title>
+  </head>
+  <body>
+    <div>
+      <h1>Chinese Zodiac Animal Signs</h1>
+      <div id="headerp">
+        <p>
+          This is a webpage that tells you what Chinese Zodiacs sign you are,
+          you have to enter your date of birth and it will show your zodiac
+          animal.
+        </p>
+        <p>
+          The Chinese zodiac, or Sheng Xiao (生肖), is a repeating 12-year cycle
+          of animal signs and their ascribed attributes, based on the lunar
+          calendar. In order, the zodiac animals are: Rat, Ox, Tiger, Rabbit,
+          Dragon, Snake, Horse, Goat, Monkey, Rooster, Dog, Pig.
+        </p>
+        <p>
+          Your birth year determines your Chinese zodiac sign, but it can get
+          tricky, as the lunar calendar varies from the solar, or Gregorian,
+          calendar.
+        </p>
+        <p>
+          Because the dates of Chinese New Year change every year, individuals
+          born in January or February will need to pay special attention to
+          their birth date in addition to their birth year.
+        </p>
+      </div>
+    </div>
 
     <div id="searchb">
-        <label>Please Enter the Year You Were Born</label><br>
-        <input id="inputyear" type="number"><br>
-        <button onclick="knowYourZodiac(); popUp(); " id="submitbutton"  type="submit">Go!</button>
+      <label>Please Enter the Year You Were Born</label><br />
+      <input id="inputyear" type="number" /><br />
+      <button
+        onclick="knowYourZodiac(); popUp(); "
+        id="submitbutton"
+        type="submit"
+      >
+        Go!
+      </button>
     </div>
 
-    <div  id="modal_container" class="modal-container" >
-        <div  class="modal">
-            <h1 id="year">Please Enter a Valid Year</h1>
-            <p id="display">Please make sure you're entering a valid year, This webpage doesn't accept a year previous to 1924 and no more than 2031.</p>
-            <div id="links">
-            </div>
-        </div>
-        <button id="close">Close</button>
+    <div id="modal_container" class="modal-container">
+      <div class="modal">
+        <h1 id="year"></h1>
+        <p id="display"></p>
+        <div id="links"></div>
+      </div>
+      <button id="close">Close</button>
     </div>
 
-    <script src="input.js">
-    </script>
-</body>
+    <script src="input.js"></script>
+  </body>
 </html>
