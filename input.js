@@ -18,6 +18,7 @@ const close = document.getElementById("close");
 let modal_container = document.getElementById("modal_container");
 let input = document.getElementById("inputyear");
 
+//makes the pop up go away
 close.addEventListener("click", () => {
     modal_container.classList.remove("show");
 })
