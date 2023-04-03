@@ -1,125 +1,122 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: #f42e2e;
-    font-size: larger;
-    text-align: center;
-    font-family: 'Acme', sans-serif;
+body {
+  background-color: #f42e2e;
+  text-align: center;
+  font-family: "Acme", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
-h1{
+h1 {
+  font-size: clamp(36px, 40px, 46px);
+  text-shadow: 2px 2px 3px #eed238;
+}
+#headerp {
+  font-size: clamp(17px, 22px, 32px);
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #242222;
+}
+#searchb {
+  margin: 0;
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  font-size: clamp(18px, 22px, 24px);
+}
+input {
+  border-radius: 3px;
+  border: 2px solid gold;
+  width: 100px;
+  height: 25px;
+}
+#inputyear:focus {
+  outline: 0;
+  box-shadow: 1px 1px 4px 2px #f2df71;
+}
+button {
+  background-color: #b39800;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 6px #616103;
+  color: black;
+  font-size: clamp(16px, 18px, 20px);
+  padding: 5px 10px;
+  margin: 5px;
+}
+#links a {
+    font-size: clamp(16px, 18px, 20px);
+  font-style: oblique;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 3% 0 3% 0;
+}
+#links a:hover {
+  color: #f42e2e;
+  text-shadow: 2px 2px 3px #121211;
+}
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 20px;
+  position: fixed;
+  top: 200px;
+  left: 20%;
+  width: 60vw;
+  background-color: #fe7d00;
+  border: 3px solid goldenrod;
+}
+#modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#display {
+  font-size: clamp(19px, 23px, 28px);
+  padding: 0 5% 0 5%;
+}
+#close {
+    margin: 2% 0 3% 0;
+}
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #headerp {
+    padding: 2% auto 3% auto;
+  }
+  #year {
     
-    text-shadow: 2px 2px 3px #eed238;
-}
-#headerp{
-    font-size: 20px;
-    padding-left: 20%;
-    padding-right: 20%;
-    color: #242222;
-}
-#searchb{
-    display:inline-block;
-    margin: 0;
-    padding-top: 5%;
-    padding-left: 20%;
-    padding-right: 20%;
+  }
+  #display {
+  }
+  .modal-container {
+    /* min-height: 50%;
+    
+    width: 78vw;
     text-align: center;
-}
-input{
-    border-radius: 3px;
-    border: 2px solid gold;
+    padding: 10px;
+  }
+  input {
     width: 100px;
-    height: 25px;
-}
-#inputyear:focus{
-
-    outline: 0;
-    box-shadow: 1px 1px 4px 2px #f2df71;
-}
-button{
-    background-color: #b39800;    ;
-    border: 0;
-    border-radius: 5px;
-    box-shadow: 0 5px 6px #616103;
-    color: black;
-    font-size: 16px;
-    padding: 5px 10px;
-    margin: 5px;
-    
-}
-#links a{
-   font-style: oblique;
-   text-transform: capitalize;
-    text-decoration: none;
-    margin-top: 3%;
-}
-#links a :hover{
-    color: #FE7D00;
-}
-.modal-container{
-    display: block;
-    pointer-events: none;
-    opacity: 0;
-    border-radius: 18px;
-    position: fixed;
-    top: 200px;
-    left: 20%;
-    height: 50%;
-    width: 60vw;
-    background-color: #FE7D00;
+    height: 30px;
+    border-radius: 10px;
     text-align: center;
-    border: 3px solid goldenrod;
-}
-.show{
-    pointer-events: auto;
-    opacity: 1;
-}
-
-#display{
-    font-size: 20px;
-    padding-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-#close{
-    position: relative;
-    margin: auto;
-    margin-top: 2%;
-}
-@media only screen and (min-device-width : 320px) 
-and (max-device-width : 480px){
-    body{
-        font-size: 16px;
-    }
-    #headerp{
-        font-size: 14px;
-        padding: 5%;
-    }
-    #year{
-        font-size: 19px
-    }
-    #display{
-        font-size: 13px;
-    }
-    .modal-container{
-        display: inline-block;
-        top: 200px;
-        left: 15%;
-        min-height: 50%;
-        height: 60%;
-        width: 70vw;
-        text-align: center;
-        padding: 10px;
-    }
-    input{
-        width: 100px;
-        height: 30px;
-        border-radius: 10px;
-        text-align: center;
-    }
-    #close{
-        position: relative;
-        margin: auto;
-        margin-top: 5%;
-    }
-}
+  }
+  #close {
+    align-self: self-end;
+    justify-self: end;
+    /* position: relative;
+    margin: auto; */
+    /* margin-top: 5%;
+  }
+} * */
