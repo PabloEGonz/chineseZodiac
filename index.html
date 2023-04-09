@@ -22,10 +22,11 @@
   </head>
   <body>
     <div
-      class="container-fluid d-flex flex-column g-5 justify-content-between align-items-center"
+      class="container d-flex flex-column g-5 justify-content-between align-items-center text-center"
+      id="main"
     >
-      <h1>Chinese Zodiac Animal Signs</h1>
-      <div id="headerp" class="container">
+      <h1 class="display-5 mt-5">Chinese Zodiac Animal Signs</h1>
+      <div id="headerp" class="container lead text-center mt-5">
         <p>
           This is a webpage that tells you what Chinese Zodiacs sign you are,
           you have to enter your date of birth and it will show your zodiac
@@ -51,13 +52,15 @@
     </div>
 
     <div id="searchb" class="container d-flex flex-column align-items-center">
-      <label>Please Enter the Year You Were Born</label><br />
+      <label class="font-weight-bolder"
+        >Please Enter the Year You Were Born</label
+      ><br />
       <input id="inputyear" type="number" /><br />
       <button
         onclick="knowYourZodiac();"
         id="submitbutton"
         type="submit"
-        class="btn btn-primary"
+        class="btn btn-primary px-4"
         data-bs-toggle="modal"
         data-bs-target="#modalpopup"
       >
@@ -66,30 +69,24 @@
     </div>
     <div
       id="modalpopup"
-      tabindex="-1"
-      class="modal fade"
+      class="modal mt-5"
       aria-labelledby="modal"
       aria-hidden="true"
     >
-      <div class="modal-dialog d-flex flex-column mt-5">
-        <h1 id="year">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. !
-        </h1>
+      <div
+        class="modal-dialog d-flex flex-column align-items-center mt-5 p-5"
+      >
+        <h1 id="year"></h1>
         <button
           type="button"
           class="btn-close position-absolute align-self-end"
           data-bs-dismiss="modal"
           aria-label="Close"
         ></button>
-        <p id="display">
-          Pariatur tempora autem tempore perspiciatis quo aliquam nesciunt
-          voluptatibus recusandae necessitatibus sed sint praesentium tenetur
-          repellat voluptates quisquam numquam, omnis consectetur eveniet Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Molestias, saepe!
-          Libero, esse eos tempora praesentium vel iusto saepe laborum delectus,
-          ratione dolorum nam, accusamus iste. Laborum magnam adipisci ab cum.
-        </p>
-        <div id="links">Lorem ipsum dolor sit amet.</div>
+        <p id="display"></p>
+        <div id="links">
+          <a id="ratlink" href="zodiacs/rat.html">click here to know more</a>
+        </div>
       </div>
     </div>
 
