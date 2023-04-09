@@ -12,16 +12,7 @@ let dog = [1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018, 2030];
 let pig = [1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019, 2031];
 
 
-
-// const open = document.getElementById("submitbutton");
-// const close = document.getElementById("close");
-// let modal = document.getElementById("modal");
 let input = document.getElementById("inputyear");
-
-// //makes the pop up go away
-// close.addEventListener("click", () => {
-//     modal.classList.remove("show");
-// })
 
 //event listener to click the submitbutton on enter
 
@@ -31,10 +22,6 @@ input.addEventListener("keyup", (event)=>{
     }
 });
 
-//makes the modal pop up show up
-let popUp = function(){
-    modal.classList.add("show");
-}
 let knowYourZodiac = function(){
 // Takes the input year and stores it in the variable 
     const zodiac = parseInt(input.value);
