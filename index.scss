@@ -1,11 +1,4 @@
-$softRed: #d73c37;
-$black: #2f3542;
-$hardRed: #d73c37;
-$gold: #dfbc5e;
-$softGold: #e6e0ae;
-$orage: #ffa502;
-$white: #f1f2f6;
-$shadow4gold: 2px 2px 5px $black;
+@import "_variables";
 body {
   background-color: $softRed !important ;
   color: $black;
@@ -60,9 +53,9 @@ body {
     }
 
     button {
-        right: 2%;
-        top: 3%;
-        color: $black;
+      right: 2%;
+      top: 3%;
+      color: $black;
     }
 
     p {
