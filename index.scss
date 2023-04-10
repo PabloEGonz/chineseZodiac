@@ -1,37 +1,84 @@
-$softRed : #ff4757 ;
-$black : #2f3542;
-$hardRed : #d73c37;
-$gold : #dfbc5e;
-$softGold : #e6e0ae;
-$orage : #ffa502;
+$softRed: #d73c37;
+$black: #2f3542;
+$hardRed: #d73c37;
+$gold: #dfbc5e;
+$softGold: #e6e0ae;
+$orage: #ffa502;
+$white: #f1f2f6;
+$shadow4gold: 2px 2px 5px $black;
 body {
-    background-color: $softRed !important ;
-    color: $black;
-    .modal-dialog {
-        color: $softGold;
-        border: 3px solid $gold;
-        border-radius: 15px;
-        pointer-events: all;
-        h1 {
-            text-shadow: 2px 2px 5px $black;
-        }
-        p {
-            color: #f1f2f6;
-        }
-        #links{
-            a { 
-                text-decoration: none;
-                color: $orage;
-                text-transform: capitalize;
-                text-shadow: 3px 3px 6px $black;
-            }
-            a:hover{
-                text-shadow: 5px 5px 15px $softGold;
-            }
-           
-        }
+  background-color: $softRed !important ;
+  color: $black;
+
+  .container {
+    h1 {
+      color: $gold;
+      font-weight: 600;
+      text-shadow: $shadow4gold;
     }
-}
-.modal-dialog {
+
+    p {
+      color: $white;
+    }
+  }
+
+  #searchb {
+    label {
+      color: $gold;
+      font-weight: 700;
+      text-shadow: $shadow4gold;
+    }
+
+    input {
+      border: 2px solid $gold;
+      border-radius: 5px;
+      &:focus {
+        outline: 0;
+        box-shadow: 1px 1px 4px 2px #f2df71;
+      }
+    }
+    button {
+      background-color: $orage;
+      border: 1px solid $softGold;
+      &:hover {
+        background-color: lighten($color: $orage, $amount: 15);
+        color: $black;
+        border: 3px solid $gold;
+      }
+    }
+  }
+
+  .modal-dialog {
     background-color: $hardRed;
+    color: $softGold;
+    border: 3px solid $gold;
+    border-radius: 15px;
+    pointer-events: all;
+
+    h1 {
+      text-shadow: 2px 2px 5px $black;
+    }
+
+    button {
+        right: 2%;
+        top: 3%;
+        color: $black;
+    }
+
+    p {
+      color: #f1f2f6;
+    }
+
+    #links {
+      a {
+        text-decoration: none;
+        color: $gold;
+        text-transform: capitalize;
+        text-shadow: 4px 4px 8px $black;
+        &:hover {
+          text-shadow: 5px 5px 15px $softGold;
+        }
+      }
+    }
+  }
 }

@@ -1,8 +1,39 @@
 body {
-  background-color: #ff4757 !important;
+  background-color: #d73c37 !important;
   color: #2f3542;
 }
+body .container h1 {
+  color: #dfbc5e;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px #2f3542;
+}
+body .container p {
+  color: #f1f2f6;
+}
+body #searchb label {
+  color: #dfbc5e;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #2f3542;
+}
+body #searchb input {
+  border: 2px solid #dfbc5e;
+  border-radius: 5px;
+}
+body #searchb input:focus {
+  outline: 0;
+  box-shadow: 1px 1px 4px 2px #f2df71;
+}
+body #searchb button {
+  background-color: #ffa502;
+  border: 1px solid #e6e0ae;
+}
+body #searchb button:hover {
+  background-color: #ffc04f;
+  color: #2f3542;
+  border: 3px solid #dfbc5e;
+}
 body .modal-dialog {
+  background-color: #d73c37;
   color: #e6e0ae;
   border: 3px solid #dfbc5e;
   border-radius: 15px;
@@ -11,19 +42,20 @@ body .modal-dialog {
 body .modal-dialog h1 {
   text-shadow: 2px 2px 5px #2f3542;
 }
+body .modal-dialog button {
+  right: 2%;
+  top: 3%;
+  color: #2f3542;
+}
 body .modal-dialog p {
   color: #f1f2f6;
 }
 body .modal-dialog #links a {
   text-decoration: none;
-  color: #ffa502;
+  color: #dfbc5e;
   text-transform: capitalize;
-  text-shadow: 3px 3px 6px #2f3542;
+  text-shadow: 4px 4px 8px #2f3542;
 }
 body .modal-dialog #links a:hover {
   text-shadow: 5px 5px 15px #e6e0ae;
-}
-
-.modal-dialog {
-  background-color: #d73c37;
 }/*# sourceMappingURL=index.css.map */
