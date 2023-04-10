@@ -1,0 +1,25 @@
+@import "../variables";
+
+body {
+  background-color: $softRed !important;
+  h1 {
+    color: $softGold;
+    font-weight: 400 !important;
+    text-shadow: 5px 5px 10px $gold;
+  }
+  h3 {
+    color: $orage;
+    text-shadow: $shadow4gold;
+  }
+  .lead {
+    color: $white;
+  }
+  img {
+    width: 50vh;
+  }
+  h3 a {
+    text-decoration: none;
+    color: $gold;
+    text-shadow: $shadow4gold;
+  }
+}

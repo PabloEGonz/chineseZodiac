@@ -1,0 +1,23 @@
+body {
+  background-color: #d73c37 !important;
+}
+body h1 {
+  color: #e6e0ae;
+  font-weight: 400 !important;
+  text-shadow: 5px 5px 10px #dfbc5e;
+}
+body h3 {
+  color: #ffa502;
+  text-shadow: 2px 2px 5px #2f3542;
+}
+body .lead {
+  color: #f1f2f6;
+}
+body img {
+  width: 50vh;
+}
+body h3 a {
+  text-decoration: none;
+  color: #dfbc5e;
+  text-shadow: 2px 2px 5px #2f3542;
+}/*# sourceMappingURL=zodiac.css.map */
