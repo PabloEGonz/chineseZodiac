@@ -10,5 +10,6 @@ const render = (id) => {
 <h3><a id="return">Go Back</a></h3>`;
     const close = document.querySelector('#return');
     close.addEventListener('click', () => container.classList.remove('show'));
+    document.querySelector('.btn-close').click();
 }
 export default render;
