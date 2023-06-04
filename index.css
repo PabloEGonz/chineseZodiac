@@ -39,6 +39,7 @@ body .modal-dialog {
   border: 3px solid #dfbc5e;
   border-radius: 15px;
   pointer-events: all;
+  min-width: 60%;
 }
 body .modal-dialog h1 {
   text-shadow: 2px 2px 5px #2f3542;
