@@ -1,5 +1,6 @@
 .zodiacs {
   background-color: #d73c37 !important;
+  display: none;
 }
 .zodiacs h1 {
   color: #e6e0ae;
@@ -20,4 +21,14 @@
   text-decoration: none;
   color: #dfbc5e;
   text-shadow: 2px 2px 5px #2f3542;
+}
+
+.show {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  z-index: 1501;
+  width: 100%;
 }/*# sourceMappingURL=zodiac.css.map */
