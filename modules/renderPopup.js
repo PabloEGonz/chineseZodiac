@@ -1,4 +1,5 @@
 import twelveZod from "./popup.js";
+import render from "./render.js";
 const modalWindow = document.querySelector('.modal-dialog');
 
 const renderPopup = (id) => {
@@ -9,8 +10,12 @@ const renderPopup = (id) => {
       data-bs-dismiss="modal"
       aria-label="Close"
     ></button>
-    <p id="display">${twelveZod[id].descr}</p>
+    <p class="lead "id="display">${twelveZod[id].descr}</p>
     <div id="links">${twelveZod[id].link}</div>`
+    const link = document.querySelector('#links');
+    link.addEventListener('click', () => {
+      render(id);
+    })
 }
 
 export default renderPopup;
