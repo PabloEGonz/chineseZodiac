@@ -1,6 +1,8 @@
-@import "../variables";
+@import "./variables";
 
-body {
+
+.zodiacs {
+  display: none;
   background-color: $softRed !important;
   h1 {
     color: $softGold;
