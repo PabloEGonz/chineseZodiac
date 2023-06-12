@@ -12,12 +12,18 @@ let snake = [1929, 1941, 1953, 1965, 1977, 1989, 2001, 2013, 2025];
 let tiger = [1926, 1938, 1950, 1962, 1974, 1986, 1998, 2010, 2022];
 
 import renderPopup from "./renderPopup.js";
-let input = document.getElementById("inputyear");
+let day = document.getElementById("input-day");
+let month = document.getElementById("input-month");
+let year = document.getElementById("input-year");
+
+// const date = new ZodiacSign('1 April 2001 00:12:00 GMT').chinese;
+// console.log(date);
 
 const knowYourZodiac = () => {
     // Takes the input year and stores it in the variable 
-    const zodiac = parseInt(input.value);
 
+    const zodiac = new ZodiacSign(`${day.value} ${month.value} ${year.value} 00:12:00 GMT`).chinese;
+    console.log(zodiac);
     if (dog.includes(zodiac)) {
         renderPopup(0);
     }
@@ -57,7 +63,7 @@ const knowYourZodiac = () => {
     else {
         renderPopup(12);
     }
-    input.value = '';
+    // input.value = '';
 }
 
 export default knowYourZodiac;
