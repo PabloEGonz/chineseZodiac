@@ -10,3 +10,4 @@ input.addEventListener("keyup", (event) => {
         button.click()
     }
 });
+
