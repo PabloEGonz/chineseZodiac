@@ -5,11 +5,10 @@ let year = document.getElementById("input-year");
 const modalWindow = document.querySelector('.modal-dialog');
 
 // const date = new ZodiacSign('1 April 2001 00:12:00 GMT').chinese;
-// console.log(date);
 
 const knowYourZodiac = () => {
     // Takes the input year and stores it in the variable 
-    if (day.value.trim() && month.valuetrim() & year.valuetrim()) {
+    if (day.value.trim() && month.value.trim() && year.value.trim()) {
         const zodiac = new ZodiacSign(`${day.value} ${month.value} ${year.value} 00:12:00 GMT`).chinese;
         if (zodiac.includes('Dog')) {
             renderPopup(0, zodiac);
@@ -50,9 +49,10 @@ const knowYourZodiac = () => {
         else {
             renderPopup(12);
         }
-        // input.value = '';
+        input.value = '';
+    } else {
+        modalWindow.innerHTML = ' <h1> You need to fill the required fields </h1>'
     }
-    modalWindow.innerHTML = ' <h1> You need to fill the required </h1>'
 }
 
 export default knowYourZodiac;
