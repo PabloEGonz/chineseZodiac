@@ -1,5 +1,5 @@
 import knowYourZodiac from "./modules/knowZodiac.js";
-const input = document.getElementById("inputyear");
+const input = document.getElementById("input-year");
 const button = document.querySelector('#submitbutton');
 
 button.addEventListener("click", knowYourZodiac);
@@ -10,3 +10,4 @@ input.addEventListener("keyup", (event) => {
         button.click()
     }
 });
+

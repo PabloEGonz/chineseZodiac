@@ -60,4 +60,10 @@ body .modal-dialog #links a {
 }
 body .modal-dialog #links a:hover {
   text-shadow: 5px 5px 15px #e6e0ae;
+}
+
+@media only screen and (max-width: 600px) {
+  .just-desk {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
