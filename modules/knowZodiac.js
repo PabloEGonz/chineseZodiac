@@ -49,7 +49,7 @@ const knowYourZodiac = () => {
         else {
             renderPopup(12);
         }
-        input.value = '';
+        year.value = '';
     } else {
         modalWindow.innerHTML = ' <h1> You need to fill the required fields </h1>'
     }
