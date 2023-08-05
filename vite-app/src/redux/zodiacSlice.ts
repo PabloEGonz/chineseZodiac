@@ -1,13 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import knowYourZodiac, { twelveZod } from "./zodiacInfo";
+import knowYourZodiac, { twelveZod, zodiacs } from "./zodiacInfo";
 
 interface ZodiacObject {
   animal: {
     year: string;
     descr: string;
     type: string;
-  };
+  },
+  description: {
+    title: string;
+    intro: string;
+    description: string;
+    image: string;
+  }
 }
 
 const initialState: ZodiacObject = {
@@ -17,6 +23,12 @@ const initialState: ZodiacObject = {
       "Please make sure you're entering a valid year, This webpage doesn't accept a year previous to 1924 and no more than 2031.",
     type: "",
   },
+  description: {
+    title: '',
+    intro: '',
+    description: '',
+    image: ''
+  }
 };
 
 export const zodiacSlice = createSlice({
@@ -29,10 +41,13 @@ export const zodiacSlice = createSlice({
       state.animal = {
         ...twelveZod[knowYourZodiac(zodiac)],
         type: zodiac,
-      };
+      }
+    },
+    getDescription: (state, action: PayloadAction<string>) => {
+      state.description = zodiacs[knowYourZodiac(action.payload)]
     },
   },
 });
 
-export const { getZodiac } = zodiacSlice.actions;
+export const { getZodiac, getDescription } = zodiacSlice.actions;
 export default zodiacSlice.reducer;
