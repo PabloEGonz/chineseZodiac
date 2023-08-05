@@ -10,7 +10,6 @@ const Home = () => {
         <Form />
         <PopUP />
       </main>
-      <section className="zodiacs"></section>
     </>
   );
 };
