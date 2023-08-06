@@ -1,5 +1,6 @@
 import { useAppSelector } from "../redux/hooks";
 import indefinite from "indefinite";
+import { Link } from "react-router-dom";
 
 const PopUP = () => {
   const { animal } = useAppSelector((state) => state.zodiac);
@@ -22,7 +23,7 @@ const PopUP = () => {
         <p className="lead " id="display">
           {animal.descr}
         </p>
-        <div id="links">Click here to know more</div>
+        <Link id="links" to={`zodiac/${animal.type}`}>Click here to know more</Link>
       </div>
     </div>
   );
