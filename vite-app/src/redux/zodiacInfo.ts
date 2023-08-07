@@ -1,3 +1,16 @@
+import dog from '../assets/dogPic.svg'
+import dragon from '../assets/dragonPic.svg'
+import goat from '../assets/goatPic.svg'
+import horse from '../assets/horsePic.svg'
+import monkey from '../assets/monkeyPic.svg'
+import ox from '../assets/oxPic.svg'
+import pig from '../assets/pigPic.svg'
+import rabbit from '../assets/rabbitPic.svg'
+import rat from '../assets/ratPic.svg'
+import tiger from '../assets/tigerPic.svg'
+import snake from '../assets/snakePic.svg'
+import rooster from '../assets/rooster.svg'
+
 export const zodiacs = [
   {
     title: "Year of the Dog",
@@ -15,7 +28,7 @@ export const zodiacs = [
           consider things, which may lead to misunderstanding and blame their own
           mistakes on others.
         </p>`,
-    image: `./photos/dogPic.svg`,
+    image: dog,
   },
   {
     title: `Year of the Dragon`,
@@ -33,7 +46,7 @@ export const zodiacs = [
           achieve excellence and get great success, then honing the willpower is
           indispensable.
         </p>`,
-    image: `./photos/dragonPic.svg`,
+    image: dragon,
   },
   {
     title: `Year of the Goat`,
@@ -52,7 +65,7 @@ export const zodiacs = [
           and enough understanding from their friends. Also, they keep alert when
           strangers step into their domains.
         </p>`,
-    image: `./photos/goatPic.svg`,
+    image: goat,
   },
   {
     title: `Year of the Horse`,
@@ -72,7 +85,7 @@ export const zodiacs = [
           essence through the phenomena and be considerate enough to take care of
           other people’s emotions.
         </p>`,
-    image: `./photos/horsePic.svg`,
+    image: horse,
   },
   {
     title: `Year of the Monkey`,
@@ -91,7 +104,7 @@ export const zodiacs = [
           more patience. Too many opportunistic behaviors may also affect others’
           impressions on them.
         </p>`,
-    image: `./photos/monkeyPic.svg`,
+    image: monkey,
   },
   {
     title: `Year of the Ox`,
@@ -109,7 +122,7 @@ export const zodiacs = [
           little conservative, Oxen always try to keep just and fair, no matter in
           life or at work, and never let people down.
         </p>`,
-    image: `./photos/oxPic.svg`,
+    image: ox,
   },
   {
     title: `Year of the Pig`,
@@ -126,7 +139,7 @@ export const zodiacs = [
           Pigs may be a little realistic and emotional, and it is hard for them to
           detect lies and thus easily be fooled by bad people.
         </p>`,
-    image: `./photos/pigPic.svg`,
+    image: pig,
   },
   {
     title: `Year of the Rabbit`,
@@ -144,7 +157,7 @@ export const zodiacs = [
           and outsiders. They don’t trust others easily, unlikely to be fooled by
           others. However, they do have courteous manners in social settings.
         </p>`,
-    image: `./photos/rabbitPic.svg`,
+    image: rabbit,
   },
   {
     title: `Year of the Rat`,
@@ -158,7 +171,7 @@ export const zodiacs = [
           qualified to become great leaders due to the stubbornness and the lack
           of empathy and humility.
         </p>`,
-    image: `./photos/ratPic.svg`,
+    image: rat,
   },
   {
     title: `Year of the Rooster`,
@@ -176,7 +189,7 @@ export const zodiacs = [
           arrogant sometimes. Their craving for attention may make others feel
           uncomfortable. The lack of patience could be another problem.
         </p>`,
-    image: `./photos/roosterPic.svg`,
+    image: rooster,
   },
   {
     title: `Year of the Snake`,
@@ -195,7 +208,7 @@ export const zodiacs = [
           about everything. In the love aspect, the Snakes are devoted lovers who
           will not fall in love with someone else.
         </p>`,
-    image: `./photos/snakePic.svg`,
+    image: snake,
   },
   {
     title: `Year of the Tiger`,
@@ -214,7 +227,13 @@ export const zodiacs = [
           them rebellious, stubborn and arbitrary in life, and thus it is not easy
           for them to take others’ advice.
         </p>`,
-    image: `/photos/tigerPic.svg`,
+    image: tiger,
+  },
+  {
+    title: 'Invalid name',
+    intro: 'Could not find a zodiac animal with that name',
+    description: '',
+    image: '',
   },
 ];
 
