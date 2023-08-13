@@ -3,7 +3,6 @@ import { getDescription } from "../redux/zodiacSlice";
 import { useAppSelector } from "../redux/hooks";
 import { useAppDispatch } from "../redux/hooks";
 import { useEffect } from "react";
-// import dog from "../assets/dogPic.svg";
 
 const Info = () => {
   const dispatch = useAppDispatch();
@@ -13,8 +12,8 @@ const Info = () => {
     dispatch(getDescription(zodiacId || ""));
   }, []);
   return (
-    <div>
-      `<h1 className="display-3">{description.title}</h1>
+    <div className="zodiacs">
+      <h1 className="display-3">{description.title}</h1>
       <h3 className="display-6">{description.intro}</h3>
       <div className="lead m-5 px-5">{description.description}</div>
       <div className="pic">
