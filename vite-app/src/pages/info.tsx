@@ -15,7 +15,11 @@ const Info = () => {
     <div className="zodiacs">
       <h1 className="display-3">{description.title}</h1>
       <h3 className="display-6">{description.intro}</h3>
-      <div className="lead m-5 px-5">{description.description}</div>
+      <div className="lead m-5 px-5">
+        {description.description.split("//").map((par: string) => {
+          return <p>{par}</p>;
+        })}
+      </div>
       <div className="pic">
         <img className="rounded" src={description.image} />
       </div>
