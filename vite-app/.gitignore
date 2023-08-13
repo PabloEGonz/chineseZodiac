@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#saas files
+
+index.css.map
+zodiac.css.map
