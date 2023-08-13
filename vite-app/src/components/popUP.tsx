@@ -23,7 +23,9 @@ const PopUP = () => {
         <p className="lead " id="display">
           {animal.descr}
         </p>
-        <Link id="links" to={`zodiac/${animal.type}`}>Click here to know more</Link>
+        <Link id="links" to={`zodiac/${animal.type.replace(/[ ]+/g, "")}`}>
+          Click here to know more
+        </Link>
       </div>
     </div>
   );
