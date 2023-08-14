@@ -297,5 +297,18 @@ const knowYourZodiac = (zodiac: string) => {
     return 12;
   }
 };
-
+export {
+  dog,
+  dragon,
+  goat,
+  horse,
+  monkey,
+  ox,
+  pig,
+  rabbit,
+  rat,
+  tiger,
+  snake,
+  rooster,
+};
 export default knowYourZodiac;
