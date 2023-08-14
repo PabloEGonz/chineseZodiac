@@ -77,6 +77,25 @@
     }
   }
 }
+.sidebar {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: $gold;
+  width: 6%;
+  .sidebar-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .sidebar-img {
+    width: 68%;
+    aspect-ratio: 1/1;
+    margin: 5% 0;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .just-desk {
