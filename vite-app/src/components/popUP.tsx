@@ -13,7 +13,7 @@ const PopUP = () => {
     >
       <div className="modal-dialog d-flex flex-column align-items-center mt-5 p-5 text-center">
         <h1 id="year">{animal.year}</h1>
-        <h3>You are {indefinite(animal.type)}</h3>
+        {animal.type && <h3>You are {indefinite(animal.type)}</h3>}
         <button
           type="button"
           className="btn-close position-absolute align-self-end"
@@ -23,9 +23,11 @@ const PopUP = () => {
         <p className="lead " id="display">
           {animal.descr}
         </p>
-        <Link id="links" to={`zodiac/${animal.type.replace(/[ ]+/g, "")}`}>
-          Click here to know more
-        </Link>
+        {animal.type && (
+          <Link id="links" to={`zodiac/${animal.type.replace(/[ ]+/g, "")}`}>
+            Click here to know more
+          </Link>
+        )}
       </div>
     </div>
   );
