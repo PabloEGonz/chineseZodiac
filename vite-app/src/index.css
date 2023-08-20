@@ -52,13 +52,13 @@
 #root .modal-dialog p {
   color: #f1f2f6;
 }
-#root .modal-dialog #links a {
+#root .modal-dialog #links {
   text-decoration: none;
   color: #dfbc5e;
   text-transform: capitalize;
   text-shadow: 4px 4px 8px #2f3542;
 }
-#root .modal-dialog #links a:hover {
+#root .modal-dialog #links:hover {
   text-shadow: 5px 5px 15px #e6e0ae;
 }
 

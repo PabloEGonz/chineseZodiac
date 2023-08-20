@@ -65,14 +65,12 @@
     }
 
     #links {
-      a {
-        text-decoration: none;
-        color: $gold;
-        text-transform: capitalize;
-        text-shadow: 4px 4px 8px $black;
-        &:hover {
-          text-shadow: 5px 5px 15px $softGold;
-        }
+      text-decoration: none;
+      color: $gold;
+      text-transform: capitalize;
+      text-shadow: 4px 4px 8px $black;
+      &:hover {
+        text-shadow: 5px 5px 15px $softGold;
       }
     }
   }
