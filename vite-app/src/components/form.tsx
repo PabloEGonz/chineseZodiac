@@ -9,7 +9,8 @@ const Form = () => {
   const [year, setYear] = useState("");
 
   const handleSubmit = () => {
-    dispatch(getZodiac(`${day} ${month} ${year} 00:12:00 GMT`));
+    if (day.trim() && year.trim())
+      dispatch(getZodiac(`${day} ${month} ${year} 00:12:00 GMT`));
   };
 
   return (
