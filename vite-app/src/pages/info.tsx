@@ -23,11 +23,9 @@ const Info = () => {
       <div className="pic">
         <img className="rounded" src={description.image} />
       </div>
-      <h3>
-        <Link to="/" id="return">
-          Go Back
-        </Link>
-      </h3>
+      <Link to="/" id="return" className="links">
+        Go Back
+      </Link>
     </div>
   );
 };
