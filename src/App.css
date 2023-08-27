@@ -1,4 +1,4 @@
-@import "./zodiac.css";
+@import 'bootstrap/scss/bootstrap.scss';
 body {
   background-color: #d73c37 !important;
   color: #2f3542;
@@ -66,4 +66,4 @@ body .modal-dialog #links a:hover {
   .just-desk {
     display: none;
   }
-}/*# sourceMappingURL=index.css.map */
+}

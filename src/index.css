@@ -1,0 +1,92 @@
+@import "./zodiac.css";
+#root {
+  background-color: #d73c37 !important;
+  color: #2f3542;
+}
+#root .container h1 {
+  color: #dfbc5e;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px #2f3542;
+}
+#root .container p {
+  color: #f1f2f6;
+}
+#root #searchb label {
+  color: #dfbc5e;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #2f3542;
+}
+#root #searchb input {
+  border: 2px solid #dfbc5e;
+  border-radius: 5px;
+}
+#root #searchb input:focus {
+  outline: 0;
+  box-shadow: 1px 1px 4px 2px #f2df71;
+}
+#root #searchb button {
+  background-color: #ffa502;
+  border: 1px solid #e6e0ae;
+}
+#root #searchb button:hover {
+  background-color: #ffc04f;
+  color: #2f3542;
+  border: 3px solid #dfbc5e;
+}
+#root .modal-dialog {
+  background-color: #d73c37;
+  color: #e6e0ae;
+  border: 3px solid #dfbc5e;
+  border-radius: 15px;
+  pointer-events: all;
+  min-width: 60%;
+}
+#root .modal-dialog h1 {
+  text-shadow: 2px 2px 5px #2f3542;
+}
+#root .modal-dialog button {
+  right: 2%;
+  top: 3%;
+  color: #2f3542;
+}
+#root .modal-dialog p {
+  color: #f1f2f6;
+}
+
+.links {
+  text-decoration: none;
+  color: #dfbc5e;
+  text-transform: capitalize;
+  text-shadow: 4px 4px 8px #2f3542;
+}
+.links:hover {
+  text-shadow: 5px 5px 15px #e6e0ae;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #dfbc5e;
+  width: 6%;
+}
+.sidebar .sidebar-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+}
+.sidebar .sidebar-img {
+  width: 66%;
+  aspect-ratio: 1/1;
+  margin: 5% 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .just-desk {
+    display: none;
+  }
+  .sidebar {
+    display: none !important;
+  }
+}/*# sourceMappingURL=index.css.map */
