@@ -78,7 +78,6 @@
   }
 }
 .sidebar {
-  text-align: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -88,10 +87,10 @@
   .sidebar-list {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0 !important;
   }
   .sidebar-img {
-    width: 68%;
+    width: 66%;
     aspect-ratio: 1/1;
     margin: 5% 0;
   }
@@ -100,5 +99,8 @@
 @media only screen and (max-width: 600px) {
   .just-desk {
     display: none;
+  }
+  .sidebar {
+    display: none !important;
   }
 }

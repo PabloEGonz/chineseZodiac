@@ -15,8 +15,8 @@ import {
 import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
-    <div className="sidebar">
-      <ul className="sidebar-list">
+    <div className="sidebar d-flex align-items-center">
+      <ul className="sidebar-list text-center">
         <Link to="zodiac/Rat">
           <img className="sidebar-img rounded" src={rat} alt="zodiac animal" />
         </Link>
