@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./zodiac.css";
 
-body {
+#root {
   background-color: $softRed !important ;
   color: $black;
 
@@ -63,23 +63,43 @@ body {
     p {
       color: #f1f2f6;
     }
+  }
+}
 
-    #links {
-      a {
-        text-decoration: none;
-        color: $gold;
-        text-transform: capitalize;
-        text-shadow: 4px 4px 8px $black;
-        &:hover {
-          text-shadow: 5px 5px 15px $softGold;
-        }
-      }
-    }
+.links {
+  text-decoration: none;
+  color: $gold;
+  text-transform: capitalize;
+  text-shadow: 4px 4px 8px $black;
+  &:hover {
+    text-shadow: 5px 5px 15px $softGold;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: $gold;
+  width: 6%;
+  .sidebar-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  .sidebar-img {
+    width: 66%;
+    aspect-ratio: 1/1;
+    margin: 5% 0;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .just-desk {
     display: none;
+  }
+  .sidebar {
+    display: none !important;
   }
 }
