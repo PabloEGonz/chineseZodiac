@@ -1,4 +1,4 @@
-@import 'bootstrap/scss/bootstrap.scss';
+@import "bootstrap/scss/bootstrap.scss";
 body {
   background-color: #d73c37 !important;
   color: #2f3542;
@@ -62,8 +62,6 @@ body .modal-dialog #links a:hover {
   text-shadow: 5px 5px 15px #e6e0ae;
 }
 
-<<<<<<< Updated upstream:index.css
-=======
 .sidebar {
   position: fixed;
   top: 0;
@@ -83,7 +81,6 @@ body .modal-dialog #links a:hover {
   margin: 5% 0;
 }
 
->>>>>>> Stashed changes:src/index.css
 @media only screen and (max-width: 600px) {
   .just-desk {
     display: none;
