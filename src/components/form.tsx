@@ -25,7 +25,7 @@ const Form = () => {
         type="number"
         max="31"
         min="1"
-        className="text-center"
+        className="text-center form-control w-auto"
         required
         value={day}
         onChange={(e) => setDay(e.target.value)}
@@ -34,6 +34,7 @@ const Form = () => {
         id="input-month"
         name="month"
         value={month}
+        className="form-select w-auto"
         onChange={(e) => setMonth(e.target.value)}
       >
         <option>Jan</option>
@@ -52,7 +53,7 @@ const Form = () => {
       <input
         id="input-year"
         type="number"
-        className="text-center"
+        className="text-center form-control w-auto"
         required
         value={year}
         onChange={(e) => setYear(e.target.value)}
