@@ -89,9 +89,16 @@
     padding: 0 !important;
   }
   .sidebar-img {
-    width: 66%;
+    width: 55%;
     aspect-ratio: 1/1;
-    margin: 5% 0;
+    margin: 3% 0;
+  }
+
+  .sidebar-img:hover {
+    scale: 1.1;
+    -webkit-box-shadow: 0 0 10px 2px $hardRed;
+    -moz-box-shadow: 0 0 10px 2px $hardRed;
+    box-shadow: 0 0 10px 2px $hardRed;
   }
 }
 

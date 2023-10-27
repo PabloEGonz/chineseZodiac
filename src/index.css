@@ -77,9 +77,13 @@
   padding: 0 !important;
 }
 .sidebar .sidebar-img {
-  width: 66%;
+  width: 55%;
   aspect-ratio: 1/1;
-  margin: 5% 0;
+  margin: 3% 0;
+}
+.sidebar .sidebar-img:hover {
+  scale: 1.1;
+  box-shadow: 0 0 10px 2px #d73c37;
 }
 
 @media only screen and (max-width: 600px) {
