@@ -1,15 +1,15 @@
-import dog from "../assets/dogPic.svg";
-import dragon from "../assets/dragonPic.svg";
-import goat from "../assets/goatPic.svg";
-import horse from "../assets/horsePic.svg";
-import monkey from "../assets/monkeyPic.svg";
-import ox from "../assets/oxPic.svg";
-import pig from "../assets/pigPic.svg";
-import rabbit from "../assets/rabbitPic.svg";
-import rat from "../assets/ratPic.svg";
-import tiger from "../assets/tigerPic.svg";
-import snake from "../assets/snakePic.svg";
-import rooster from "../assets/rooster.svg";
+import dog from "../assets/dogPic.jpg";
+import dragon from "../assets/dragonPic.jpg";
+import goat from "../assets/goatPic.jpg";
+import horse from "../assets/horsePic.jpg";
+import monkey from "../assets/monkeyPic.jpg";
+import ox from "../assets/oxPic.jpg";
+import pig from "../assets/pigPic.jpg";
+import rabbit from "../assets/rabbitPic.jpg";
+import rat from "../assets/ratPic.jpg";
+import tiger from "../assets/tigerPic.jpg";
+import snake from "../assets/snakePic.jpg";
+import rooster from "../assets/rooster.jpg";
 
 export const zodiacs = [
   {
@@ -269,32 +269,33 @@ export const twelveZod = [
 ];
 
 const knowYourZodiac = (zodiac: string) => {
-  if (zodiac.includes("Dog")) {
-    return 0;
-  } else if (zodiac.includes("Dragon")) {
-    return 1;
-  } else if (zodiac.includes("Goat")) {
-    return 2;
-  } else if (zodiac.includes("Horse")) {
-    return 3;
-  } else if (zodiac.includes("Monkey")) {
-    return 4;
-  } else if (zodiac.includes("Ox")) {
-    return 5;
-  } else if (zodiac.includes("Pig")) {
-    return 6;
-  } else if (zodiac.includes("Rabbit")) {
-    return 7;
-  } else if (zodiac.includes("Rat")) {
-    return 8;
-  } else if (zodiac.includes("Rooster")) {
-    return 9;
-  } else if (zodiac.includes("Snake")) {
-    return 10;
-  } else if (zodiac.includes("Tiger")) {
-    return 11;
-  } else {
-    return 12;
+  switch (zodiac) {
+    case "Dog":
+      return 0;
+    case "Dragon":
+      return 1;
+    case "Goat":
+      return 2;
+    case "Horse":
+      return 3;
+    case "Monkey":
+      return 4;
+    case "Ox":
+      return 5;
+    case "Pig":
+      return 6;
+    case "Rabbit":
+      return 7;
+    case "Rat":
+      return 8;
+    case "Rooster":
+      return 9;
+    case "Snake":
+      return 10;
+    case "Tiger":
+      return 11;
+    default:
+      return 12;
   }
 };
 export {

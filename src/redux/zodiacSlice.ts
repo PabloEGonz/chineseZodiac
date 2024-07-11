@@ -7,13 +7,14 @@ interface ZodiacObject {
     year: string;
     descr: string;
     type: string;
-  },
+    name: string
+  };
   description: {
     title: string;
     intro: string;
     description: string;
     image: string;
-  }
+  };
 }
 
 const initialState: ZodiacObject = {
@@ -22,13 +23,14 @@ const initialState: ZodiacObject = {
     descr:
       "Please make sure you're entering a valid year, This webpage doesn't accept a year previous to 1924 and no more than 2031.",
     type: "",
+    name: "",
   },
   description: {
-    title: '',
-    intro: '',
-    description: '',
-    image: ''
-  }
+    title: "",
+    intro: "",
+    description: "",
+    image: "",
+  },
 };
 
 export const zodiacSlice = createSlice({
@@ -39,12 +41,13 @@ export const zodiacSlice = createSlice({
       // @ts-ignore
       const zodiac = new ZodiacSign(action.payload).chinese;
       state.animal = {
-        ...twelveZod[knowYourZodiac(zodiac)],
-        type: zodiac,
-      }
+        ...twelveZod[knowYourZodiac(zodiac.sign)],
+        type: zodiac.element,
+        name: zodiac.sign,
+      };
     },
     getDescription: (state, action: PayloadAction<string>) => {
-      state.description = zodiacs[knowYourZodiac(action.payload)]
+      state.description = zodiacs[knowYourZodiac(action.payload)];
     },
   },
 });
