@@ -7,11 +7,6 @@ const Description = () => {
       <h1 className="display-5 mt-5">Chinese Zodiac Animal Signs</h1>
       <div id="headerp" className="container lead text-center mt-5">
         <p>
-          This is a webpage that tells you what Chinese Zodiacs sign you are,
-          you have to enter your date of birth and it will show your zodiac
-          animal.
-        </p>
-        <p>
           The Chinese zodiac is a repeating 12-year cycle of animal signs and
           their ascribed attributes, based on the lunar calendar. In order, the
           zodiac animals are: Rat, Ox, Tiger, Rabbit, Dragon, Snake, Horse,

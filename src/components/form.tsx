@@ -20,36 +20,39 @@ const Form = () => {
     >
       <label className="font-weight-bolder">Please Enter your Birth Date</label>
       <br />
-      <input
-        id="input-day"
-        type="number"
-        max="31"
-        min="1"
-        className="text-center form-control w-auto"
-        required
-        value={day}
-        onChange={(e) => setDay(e.target.value)}
-      />
-      <select
-        id="input-month"
-        name="month"
-        value={month}
-        className="form-select w-auto"
-        onChange={(e) => setMonth(e.target.value)}
-      >
-        <option>Jan</option>
-        <option>Feb</option>
-        <option>March</option>
-        <option>April</option>
-        <option>May</option>
-        <option>June</option>
-        <option>July</option>
-        <option>Aug</option>
-        <option>Sept</option>
-        <option>Oct</option>
-        <option>Nov</option>
-        <option>Dec</option>
-      </select>
+      <div className="inputs">
+        <input
+          id="input-day"
+          type="number"
+          max="31"
+          min="1"
+          className="text-center form-control w-auto"
+          required
+          value={day}
+          onChange={(e) => setDay(e.target.value)}
+        />
+        <select
+          id="input-month"
+          name="month"
+          value={month}
+          className="form-select w-auto"
+          onChange={(e) => setMonth(e.target.value)}
+        >
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>Aug</option>
+          <option>Sept</option>
+          <option>Oct</option>
+          <option>Nov</option>
+          <option>Dec</option>
+        </select>
+      </div>
+
       <input
         id="input-year"
         type="number"

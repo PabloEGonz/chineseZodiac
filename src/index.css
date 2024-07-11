@@ -16,6 +16,11 @@
   font-weight: 700;
   text-shadow: 2px 2px 5px #2f3542;
 }
+#root #searchb .inputs {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 5px;
+}
 #root #searchb input {
   border: 2px solid #dfbc5e;
   border-radius: 5px;
