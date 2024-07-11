@@ -17,7 +17,7 @@ const Info = () => {
       <h3 className="display-6">{description.intro}</h3>
       <div className="lead m-5 px-5">
         {description.description.split("//").map((par: string) => {
-          return <p>{par}</p>;
+          return <p key={par}>{par}</p>;
         })}
       </div>
       <div className="pic">
